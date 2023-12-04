@@ -15,7 +15,13 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void on_MiseSousTension_clicked();
+
+    void on_DemarrageDrone_clicked();
+
 private:
     Ui::MainWindow *ui;
+    bool clickTension  ;
 };
 #endif // MAINWINDOW_H
